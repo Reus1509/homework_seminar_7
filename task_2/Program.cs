@@ -26,12 +26,12 @@ void Main()
 }
 
 void CreateArr(int[,] arr)
-{   
+{
     for (int i = 0; i < arr.GetLength(0); i++)
     {
         for (int j = 0; j < arr.GetLength(1); j++)
         {
-            arr[i,j] = new Random().Next(0, 11);
+            arr[i, j] = new Random().Next(0, 11);
         }
     }
 }
@@ -42,7 +42,7 @@ void PrintArray(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            Console.Write($"{array[i,j]} ");
+            Console.Write($"{array[i, j]} ");
         }
         Console.WriteLine();
     }
@@ -56,7 +56,7 @@ void SearchInArray(int m, int n, int[,] arr)
     }
     else
     {
-        Console.WriteLine($"На строке {n} и строке {m} находится число: {arr[n-1,m-1]}");
+        Console.WriteLine($"На строке {n} и строке {m} находится число: {arr[n - 1, m - 1]}");
     }
 }
 
